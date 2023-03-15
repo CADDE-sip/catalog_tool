@@ -1,0 +1,75 @@
+{
+  "ckan_info": {
+    "release": {
+      "ckan_url": "http://ec2-13-115-62-178.ap-northeast-1.compute.amazonaws.com:5000/",
+      "sysadmin_key": "04c76dfa-0adb-4fd8-941a-5c57926a3009",
+      "authentication": false,
+      "authentication_method": "OAuth2"
+    },
+    "detail": {
+      "ckan_url": "http://ec2-13-115-62-178.ap-northeast-1.compute.amazonaws.com:5500/",
+      "sysadmin_key": "04c76dfa-0adb-4fd8-941a-5c57926a3009",
+      "authentication": false,
+      "authentication_method": "OAuth2"
+    }
+  },
+  "sysadmin": {
+      "cadde_user_id": ["ckan_admin", "cadde_admin", "cadde.aaa.aa"],
+      "ckan_username": "ckan_admin",
+      "ckan_user_password": "test1234"
+  },
+  "geonames": {
+      "use_geonames": false,
+      "username": ""
+  },
+  "machine_learn": {
+      "theme": true,
+      "keyword": true,
+      "spatial": true,
+      "temporal": true
+  },
+  "history_url": "http://sougou2.fj-trial.com/sip01-org01-cdl/v2/",
+  "server": {
+    "ngsi": "catalog-tool-ngsi:18080",
+    "grpc": "catalog-tool-ml:50251",
+    "ckan_authentication": {
+      "OAuth": "catalog-tool-authentication-oauth",
+      "OAuth2": "catalog-tool-authentication-oauth2"
+      }
+  },
+  "authentication": {
+      "auth_server_url": "http://10.240.59.11:12002",
+      "keycloak_endpoint": "/keycloak/realms/authentication",
+      "client_id": "catalog_tool_app",
+      "client_secret": "J7BrmdfM9xoxEoxNfFoDnNlTbSetgv41"
+  },
+  "postgres": {
+      "dialect": "postgresql",
+      "driver": "",
+      "username": "catalogtool",
+      "password": "catalogtool",
+      "host": "catalog-tool-postgres",
+      "port": "5432",
+      "database": "catalogtool"
+  },
+  "http_auth": [
+    {
+      "url": "http://10.240.59.11:30088",
+      "id": "test",
+      "pass": "test123",
+      "proxy": false
+    }
+  ],
+  "ftp_auth": [
+    {
+      "url": "ftp://10.240.59.11",
+      "id": "anonymous",
+      "pass": "anonymous"
+    },
+    {
+      "url": "ftp://10.240.59.11:40121",
+      "id": "test_C",
+      "pass": "mypass_C"
+    }
+  ]
+}

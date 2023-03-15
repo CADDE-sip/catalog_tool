@@ -1,0 +1,126 @@
+[
+  {
+    "label": "日本語",
+    "value": "ja"
+  },
+  {
+    "label": "英語",
+    "value": "en"
+  },
+  {
+    "label": "アラビア語",
+    "value": "ar"
+  },
+  {
+    "label": "アゼルバイジャン語",
+    "value": "az"
+  },
+  {
+    "label": "ベンガル語",
+    "value": "bn"
+  },
+  {
+    "label": "ドイツ語",
+    "value": "de"
+  },
+  {
+    "label": "スペイン語",
+    "value": "es"
+  },
+  {
+    "label": "ペルシア語",
+    "value": "fa"
+  },
+  {
+    "label": "フランス語",
+    "value": "fr"
+  },
+  {
+    "label": "グジャラート語",
+    "value": "gu"
+  },
+  {
+    "label": "ヒンディー語",
+    "value": "hi"
+  },
+  {
+    "label": "イタリア語",
+    "value": "it"
+  }, 
+  {
+    "label": "ジャワ語",
+    "value": "jv"
+  },
+  {
+    "label": "カンナダ語",
+    "value": "kn"
+  },
+  {
+    "label": "朝鮮語/韓国語",
+    "value": "ko"
+  },
+  {
+    "label": "マラヤーラム語",
+    "value": "ml"
+  },
+  {
+    "label": "マラーティー語",
+    "value": "mr"
+  },
+  {
+    "label": "ビルマ語",
+    "value": "my"
+  },
+  {
+    "label": "オリヤー語",
+    "value": "or"
+  },
+  {
+    "label": "パンジャーブ語",
+    "value": "pa"
+  },
+  {
+    "label": "ポーランド語",
+    "value": "pl"
+  },
+  {
+    "label": "ポルトガル語",
+    "value": "pt"
+  },
+  {
+    "label": "ロシア語",
+    "value": "ru"
+  },
+  {
+    "label": "タミル語",
+    "value": "ta"
+  },
+  {
+    "label": "テルグ語",
+    "value": "te"
+  },
+  {
+    "label": "タイ語",
+    "value": "th"
+  },
+  {
+    "label": "トルコ語",
+    "value": "tr"
+  },
+  {
+    "label": "ウクライナ語",
+    "value": "uk"
+  },
+  {
+    "label": "ウルドゥー語",
+    "value": "ur"
+  },
+  {
+    "label": "ベトナム語",
+    "value": "vi"
+  },
+  {
+    "label": "中国語",
+    "value": "zh"
+  }
+]

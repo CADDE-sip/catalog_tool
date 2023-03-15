@@ -1,0 +1,237 @@
+[
+  {
+    "select_item": [
+     {
+        "ckanKeyName": "frequency",
+        "ckanKeyType": "extras",
+        "valueMap": {
+          "http://publications.europa.eu/resource/authority/frequency/UPDATE_CONT": "常時",
+          "http://publications.europa.eu/resource/authority/frequency/HOURLY": "毎時",
+          "http://publications.europa.eu/resource/authority/frequency/BIHOURLY": "2時間毎",
+          "http://publications.europa.eu/resource/authority/frequency/TRIHOURLY": "3時間毎",
+          "http://publications.europa.eu/resource/authority/frequency/DAILY_2": "半日毎",
+          "http://publications.europa.eu/resource/authority/frequency/CONT": "頻繁に",
+          "http://publications.europa.eu/resource/authority/frequency/DAILY": "毎日",
+          "http://publications.europa.eu/resource/authority/frequency/WEEKLY_3": "週に3回",
+          "http://publications.europa.eu/resource/authority/frequency/WEEKLY_2": "週に2回",
+          "http://publications.europa.eu/resource/authority/frequency/WEEKLY": "毎週",
+          "http://publications.europa.eu/resource/authority/frequency/MONTHLY_3": "1か月に3回",
+          "http://publications.europa.eu/resource/authority/frequency/BIWEEKLY": "隔週",
+          "http://publications.europa.eu/resource/authority/frequency/MONTHLY_2": "半月毎",
+          "http://publications.europa.eu/resource/authority/frequency/MONTHLY": "毎月",
+          "http://publications.europa.eu/resource/authority/frequency/BIMONTHLY": "2か月に1回",
+          "http://publications.europa.eu/resource/authority/frequency/QUARTERLY": "四半期毎",
+          "http://publications.europa.eu/resource/authority/frequency/ANNUAL_3": "年に3回",
+          "http://publications.europa.eu/resource/authority/frequency/ANNUAL_2": "半年毎",
+          "http://publications.europa.eu/resource/authority/frequency/ANNUAL": "毎年",
+          "http://publications.europa.eu/resource/authority/frequency/BIENNIAL": "2年毎",
+          "http://publications.europa.eu/resource/authority/frequency/TRIENNIAL": "3年毎",
+          "http://publications.europa.eu/resource/authority/frequency/QUADRENNIAL": "4年毎",
+          "http://publications.europa.eu/resource/authority/frequency/QUINQUENNIAL": "5年毎",
+          "http://publications.europa.eu/resource/authority/frequency/DECENNIAL": "10年毎",
+          "http://publications.europa.eu/resource/authority/frequency/BIDECENNIAL": "20年毎",
+          "http://publications.europa.eu/resource/authority/frequency/TRIDECENNIAL": "30年毎",
+          "http://publications.europa.eu/resource/authority/frequency/OTHER": "その他の間隔",
+          "http://publications.europa.eu/resource/authority/frequency/IRREG": "不定期",
+          "http://publications.europa.eu/resource/authority/frequency/UNKNOWN": "不明",
+          "http://publications.europa.eu/resource/authority/frequency/NEVER": "非更新"
+        }
+      },
+      {
+        "ckanKeyName": "caddec_resource_type",
+        "ckanKeyType": "resources",
+        "valueMap": {
+          "file/http": "ファイル提供(HTTP)",
+          "file/ftp": "ファイル提供(FTP)",
+          "api/ngsi": "API提供(NGSI API)"
+        }
+      },
+      {
+        "ckanKeyName": "caddec_contract_required",
+        "ckanKeyType": "resources",
+        "valueMap": {
+          "要求する": "要求する",
+          "要求しない": "要求しない"
+        }
+      },
+      {
+        "ckanKeyName": "caddec_required",
+        "ckanKeyType": "resources",
+        "valueMap": {
+          "要求する": "要求する",
+          "要求しない": "要求しない"
+        }
+      },
+      {
+        "ckanKeyName": "trading_policy_contract_type",
+        "ckanKeyType": "extras",
+        "valueMap": {
+          "譲渡": "譲渡",
+          "利用許諾": "利用許諾",
+          "共同利用": "共同利用"
+        }
+      },
+      {
+        "ckanKeyName": "trading_policy_nda",  
+        "ckanKeyType": "extras",
+        "valueMap": {
+          "求める": "求める",
+          "求めない": "求めない"
+        }
+      },
+      {
+        "ckanKeyName": "trading_policy_use_application",
+        "ckanKeyType": "extras",
+        "valueMap": {
+          "商用利用": "商用利用",
+          "研究利用": "研究利用",
+          "教育利用": "教育利用",
+          "公共利用": "公共利用",
+          "医業利用": "医業利用",
+          "制限なし": "制限なし",
+          "個別調整": "個別調整",
+          "その他": "その他"
+        }
+      },
+      {
+        "ckanKeyName": "scope_of_disclosure",
+        "ckanKeyType": "extras",
+        "valueMap": {
+          "制限なし": "制限なし",
+          "担当者限り": "担当者限り",
+          "自部門": "自部門",
+          "自社": "自社",
+          "グループ会社": "グループ会社",
+          "個別相談": "個別相談",
+          "その他": "その他"
+        }
+      },
+      {
+        "ckanKeyName": "terms_of_use_permissible_region",
+        "ckanKeyType": "extras",
+        "valueMap": {
+          "制限なし": "制限なし",
+          "日本": "日本",
+          "その他": "その他"
+        }
+      },
+      {
+        "ckanKeyName": "privacy_policy_contains_personal_data",
+        "ckanKeyType": "extras",
+        "valueMap": {
+          "非個人情報": "非個人情報",
+          "個人情報（要配慮個人情報を含む）": "個人情報（要配慮個人情報を含む）",
+          "個人情報（要配慮個人情報を含まない）": "個人情報（要配慮個人情報を含まない）",
+          "匿名加工情報": "匿名加工情報",
+          "仮名加工情報": "仮名加工情報",
+          "非識別加工情報": "非識別加工情報",
+          "その他": "その他"
+        }
+      },
+      {
+        "ckanKeyName": "data_effective_period",
+        "ckanKeyType": "extras",
+        "valueMap": {
+          "date": "開始日・終了日",
+          "note": "自由記述"
+        }
+      },
+      {
+        "ckanKeyName": "usage_license_period",
+        "ckanKeyType": "extras",
+        "valueMap": {
+          "endDate": "期限",
+          "value": "期間",
+          "note": "自由記述"
+        }
+      },
+      {
+        "ckanKeyName": "fee",
+        "ckanKeyType": "extras",
+        "valueMap": {
+          "有償": "有償",
+          "無償": "無償"
+        }
+      },
+      {
+        "ckanKeyName": "warranty_express_warranty",        
+        "ckanKeyType": "extras",
+        "valueMap": {
+          "特になし": "特になし",
+          "データ主体となる個人の本人同意が得られている": "データ主体となる個人の本人同意が得られている",
+          "測定機器が公的検定をうけている": "測定機器が公的検定をうけている",
+          "第三者のデータベース著作物を提供するに際しライセンスをクリアしている": "第三者のデータベース著作物を提供するに際しライセンスをクリアしている",
+          "その他": "その他"
+        }
+      },
+      {
+        "ckanKeyName": "warranty_legal_compliance",
+        "ckanKeyType": "extras",
+        "valueMap": {
+          "日本": "日本",
+          "その他": "その他"
+        }
+      },
+      {
+        "ckanKeyName": "mime_type",
+        "ckanKeyType": "resources",
+        "valueMap": {
+          "http://www.iana.org/assignments/media-types/application/geo+json": "geo+json",
+          "http://www.iana.org/assignments/media-types/application/json": "json",
+          "http://www.iana.org/assignments/media-types/application/ld+json": "ld+json",
+          "http://www.iana.org/assignments/media-types/application/pdf": "pdf",
+          "http://www.iana.org/assignments/media-types/application/xhtml+xml": "xhtml+xml",
+          "http://www.iana.org/assignments/media-types/application/xml": "xml",
+          "http://www.iana.org/assignments/media-types/image/jpeg": "jpeg",
+          "http://www.iana.org/assignments/media-types/text/csv": "csv",
+          "http://www.iana.org/assignments/media-types/text/html": "html",
+          "http://www.iana.org/assignments/media-types/text/xml": "xml",
+          "http://www.iana.org/assignments/media-types/video/mp4": "mp4"
+        }
+      },
+      {
+        "ckanKeyName": "compress_format",
+        "ckanKeyType": "resources",
+        "valueMap": {
+          "http://www.iana.org/assignments/media-types/application/gzip": "gzip",
+          "http://www.iana.org/assignments/media-types/application/zip": "zip",
+          "http://www.iana.org/assignments/media-types/application/vnd.rar": "rar",
+          "http://www.iana.org/assignments/media-types/application/vnd.ms-cab-compressed": "cab",
+          "その他": "その他"
+        }
+      },
+      {
+        "ckanKeyName": "package_format",
+        "ckanKeyType": "resources",
+        "valueMap": {
+          "tar": "tar",
+          "ar": "ar",
+          "cpio": "cpio",
+          "その他": "その他"
+        }
+      },
+      {
+        "ckanKeyName": "schema_type",
+        "ckanKeyType": "resources",
+        "valueMap": {
+          "JSON-LD": "JSON-LD",
+          "RDF-XML": "RDF-XML",
+          "XSD": "XSD",
+          "TTL": "TTL"
+        }
+      },
+      {
+        "ckanKeyName": "access_rights",
+        "ckanKeyType": "extras",
+        "valueMap": {
+          "https://publications.europa.eu/resource/authority/access-right/CONFIDENTIAL": "機密",
+          "https://publications.europa.eu/resource/authority/access-right/NON_PUBLIC": "非公開",
+          "https://publications.europa.eu/resource/authority/access-right/PUBLIC": "公開",
+          "https://publications.europa.eu/resource/authority/access-right/RESTRICTED": "制限あり",
+          "https://publications.europa.eu/resource/authority/access-right/SENSITIVE": "取り扱い注意",
+          "その他": "その他"
+        }
+      }
+    ]
+  }
+]

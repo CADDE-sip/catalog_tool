@@ -1,0 +1,20 @@
+version: '3'
+services:
+  # 支援ツールテスト実行コンテナ
+  test_flask:
+    build: ../../../../images/test-flask/
+    image: test-flask:1.0.2
+    hostname: test-flask
+    container_name: test-flask
+    ports:
+      - "18888:18000"
+    restart: always
+    logging:
+      driver: "json-file" # defaults if not specified
+      options:
+        max-size: "10m"
+        max-file: "10"
+    volumes:
+      - "../../../../volumes/catalog_tool_flask/code:/code"
+      - "/etc/localtime:/etc/localtime:ro"
+    command: 'python app.py'

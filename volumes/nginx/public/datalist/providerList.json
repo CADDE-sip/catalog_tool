@@ -1,0 +1,39 @@
+[
+  {
+    "label": "test_id_A",
+    "value": "test_id_A"
+  },
+  {
+    "label": "test_id_B",
+    "value": "test_id_B"
+  },
+  {
+    "label": "test_id_C",
+    "value": "test_id_C"
+  },
+  {
+    "label": "test_id_D",
+    "value": "test_id_D"
+  },
+  {
+    "label": "test_id_E",
+    "value": "test_id_E"
+  },
+  {
+    "label": "provider1@dataex.jp",
+    "value": "provider1@dataex.jp"
+  },
+  {
+    "label": "provider2@dataex.jp",
+    "value": "provider2@dataex.jp"
+  },
+  {
+    "label": "provider3@dataex.jp",
+    "value": "provider3@dataex.jp"
+  },
+  {
+    "label": "non_provider",
+    "value": ""
+  }
+]
+

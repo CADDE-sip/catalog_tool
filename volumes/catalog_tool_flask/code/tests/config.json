@@ -1,0 +1,75 @@
+{
+    "userinfo": {
+        "release": {
+            "username": "ckan_admin",
+            "password": "test1234"
+        },
+        "detail": {
+            "username": "ckan_admin",
+            "password": "test1234"
+        },
+        "email": "email@example.com"        
+    },
+    "addr": {
+      "release": {
+        "ckan_url": "http://10.240.59.28:5000/",
+        "sysadmin_key": "47ccced8-0653-43bd-8d1d-aa4605f9d7ac"
+      },
+      "detail": {
+        "ckan_url": "http://10.240.59.28:5001/",
+        "sysadmin_key": "89a6789a-4610-40f2-a769-ee321f9ef9f5"
+      },
+      "release_api_error": {
+        "ckan_url": "http://10.240.59.28:5000/",
+        "sysadmin_key": "47ccced8-0653-43bd-8d1d-aa4605f9d7ad"
+      },
+      "detail_api_error": {
+        "ckan_url": "http://10.240.59.28:5001/",
+        "sysadmin_key": "89a6789a-4610-40f2-a769-ee321f9ef9f6"
+      },
+      "release_url_error": {
+        "ckan_url": "http://10.240.59.28:5003/",
+        "sysadmin_key": "47ccced8-0653-43bd-8d1d-aa4605f9d7ac"
+      },
+      "detail_url_error": {
+        "ckan_url": "http://10.240.59.28:5004/",
+        "sysadmin_key": "89a6789a-4610-40f2-a769-ee321f9ef9f5"
+      }
+    },
+    "geonames": {
+        "use_geonames": false,
+        "username": ""
+    },
+    "machine_learn": {
+        "theme": true,
+        "keyword": true,
+        "spatial": true,
+        "temporal": true
+    },
+    "history_url": "http://lineage-agent.cdl/v2/",
+    "server": {
+      "ngsi": "catalog_tool_ngsi:18080",
+      "grpc": "catalog_tool_ml:40255"
+    },
+    "http_auth": [
+      {
+        "url": "http://10.240.59.28:30088",
+        "id": "test",
+        "pass": "test123",
+        "proxy": false
+      }
+    ],
+    "ftp_auth": [
+      {
+        "url": "ftp://10.240.59.28:40021",
+        "id": "test",
+        "pass": "mypass"
+      }
+    ],
+    "ngsi_auth": [
+      {
+        "user_id": "TEST_ID",
+        "auth": "input API key."
+      }
+    ]
+}

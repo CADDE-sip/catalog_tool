@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package analysis;
+
+message RequestMessage{
+  string title = 1;
+  string description = 2;
+  string analyse_type = 3;
+}
+
+message ReplyMessage{
+  string best_analyse = 1;
+  string top_analyse = 2;
+  string probability = 3;
+}
+
+service AnalyseService{
+  rpc AnalyseServer (stream RequestMessage) returns (stream ReplyMessage) {}
+}

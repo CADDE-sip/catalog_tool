@@ -1,0 +1,13 @@
+{
+    "oauth2_auth" : [
+        {
+            "ckan_url": "https://example.com/ckan",
+            "username": "test-user",
+            "auth_type": "password",
+            "authentication_url": "https://example.com/auth/oauth2/token",
+            "password": "test-user-password",
+            "client_id": "test-client-id",
+            "client_secret": "test-client-secret"
+        }
+    ]
+}

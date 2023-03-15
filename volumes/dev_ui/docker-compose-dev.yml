@@ -1,0 +1,21 @@
+version: "3"
+services:
+  dev-vue:
+    image: dev-vue:3.0.0
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    hostname: dev-vue
+    container_name: dev-vue
+    tty: true 
+    #ports:
+    #  - "9000:9000"
+    volumes:
+      - "./:/node"
+      - "/etc/localtime:/etc/localtime:ro"
+    environment:
+      - "HTTP_PROXY=http://ldap:pass@obprx01.intra.hitachi.co.jp:8080"
+      - "HTTPS_PROXY=http://ldap:pass@obprx01.intra.hitachi.co.jp:8080"
+      - "http_proxy=http://ldap:pass@obprx01.intra.hitachi.co.jp:8080"
+      - "https_proxy=http://ldap:pass@obprx01.intra.hitachi.co.jp:8080"
+      - "registry=http://registry.npmjs.org/"

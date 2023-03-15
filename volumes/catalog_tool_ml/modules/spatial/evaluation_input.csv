@@ -1,0 +1,40 @@
+﻿site,title,notes,filepath,dataset_url,memo
+G空間,"""142158_神奈川県_海老名市_公園・スポーツ施設""","""公園・スポーツ施設のデータです。神奈川県海老名市のオープンデータです""",https://www.geospatial.jp/ckan/dataset/015c6346-97a3-4e63-b357-135b32c4d5b7/resource/f9eae9a9-fc03-4992-b6b7-22b180db6a2f/download/14215parksport.csv,,
+G空間,"""松江駅構内人流センサデータ　2020年6月""","""松江駅構内17箇所に設置した人流センサのデータです""",https://www.geospatial.jp/ckan/dataset/962840f7-ebee-4e92-9004-d9b9ebeaf6f3/resource/a7ab42ee-8ce2-41de-9e4d-b57615518a6c/download/20200601.csv,,
+G空間,"""142131_神奈川県_大和市_農園・農産物""","""神奈川県大和市のオープンデータです。""",https://www.geospatial.jp/ckan/dataset/6b188386-3a8c-4ad2-9f93-171fc99bfb25/resource/9f824f08-15a6-44ce-a160-b8ef16d6f9f2/download/000121491.csv,,
+G空間,"""131202_東京都_練馬区_避難施設""","""避難所、避難場所等のデータです。東京都練馬区のオープンデータです。""",https://www.geospatial.jp/ckan/dataset/ddbe6679-257f-40be-a78e-318faf4bf7e1/resource/50237252-7488-4972-b46d-37614d414683/download/hinankyoten1.csv,,
+G空間,"""131041_東京都_新宿区_公衆無線LAN""","""公衆無線LANやWiFi SPOTのデータです。東京都新宿区のオープンデータです。""",https://www.geospatial.jp/ckan/dataset/aeb988eb-ef78-4625-9f83-5ca49719d209/resource/53c3fdf6-827e-4e57-9176-260739d3af8d/download/717.csv,,
+G空間,"""122203_千葉県_流山市_災害用井戸設置場所""","""流山市の災害用井戸設置場所です。千葉県流山市のオープンデータです。""",https://www.geospatial.jp/ckan/dataset/43b0989d-6683-4e01-99b9-b57c10e3dbbd/resource/f6322982-1415-4b76-9053-e88bb6143b7b/download/saigaiyouido2.csv,,
+G空間,"""052035_秋田県_横手市_消防水利""","""消火栓、防火水槽等のデータです。秋田県横手市のオープンデータです。""",https://www.geospatial.jp/ckan/dataset/fae02eaf-648a-4084-86e5-1460d979a947/resource/3219d9fd-2468-4d60-9371-5ebd963a7403/download/000072364.csv,,
+G空間,"""33100_岡山県_岡山市_防災情報""","""液状化マップ、地震危険度マップ、洪水時の浸水深、津波時の浸水深（堤防なし）、ため池浸水想定マップ、ゆれやすさマップのデータです。岡山県岡山市のオープンデータです。""",https://www.geospatial.jp/ckan/dataset/92f2a033-e2c7-4bdd-8eee-456d5642be77/resource/a4da9bea-c9fb-4452-abfd-b3223d6d2fbb/download/tameike.csv,,
+G空間,"""142042_神奈川県_鎌倉市_消防水利""","""消火栓、防火水槽等のデータです。神奈川県鎌倉市のオープンデータです""",https://www.geospatial.jp/ckan/dataset/1797a2cd-1843-402d-97a0-41509cee7e72/resource/5145c7d9-3fa2-4e25-869a-e4a62e4e0391/download/boukasuisou.csv,https://www.geospatial.jp/ckan/dataset/14204-003,
+G空間,"""132136_東京都_東村山市_医療施設""","""医療施設のデータです。
+東京都東村山市のオープンデータです。""",https://www.geospatial.jp/ckan/dataset/04e71bff-43be-4e3d-87b1-92b33a87d8b7/resource/6e6a84d5-7aa2-471e-a351-dd6f81950997/download/13213kyukyu.csv,https://www.geospatial.jp/ckan/dataset/13213-010,
+G空間,"""132098_東京都_町田市_文化・コミュニティ施設""","""文化・コミュニティのデータです。
+東京都町田市のオープンデータです。""",https://www.geospatial.jp/ckan/dataset/416cd8eb-156a-4bd0-b828-fe567e1ba0ae/resource/bb1a0ecf-ea17-44d8-b351-0837e7459aa4/download/13209toshokan.csv,https://www.geospatial.jp/ckan/dataset/13209-013,緯度、経度の値はあるが、測地系が違う
+G空間,"""131199_東京都_板橋区_観光情報""","""観光施設やイベント等のデータです。
+東京都板橋区のオープンデータです。""",https://www.geospatial.jp/ckan/dataset/2b61bcf8-64ea-49ec-a218-62f865cce958/resource/0c08565c-9361-453b-ad46-900346b1d4d3/download/kankospot.csv,,
+G空間,"""131237_東京都_江戸川区_土のうステーション""","""土のうステーションのデータです。
+東京都江戸川区のオープンデータです。""",https://www.geospatial.jp/ckan/dataset/9a5b7162-d849-4ab1-8b7d-068106d3c8b8/resource/d82920fe-bdc1-44ff-b236-966c3d1dedcf/download/20171101donou.csv,,
+G空間,"""092088_栃木県_小山市_公衆トイレ""","""公衆トイレや公共トイレのデータです。
+栃木県小山市のオープンデータです。""",https://www.geospatial.jp/ckan/dataset/8517fadc-0e95-444d-8da8-07117facdb3c/resource/bb465e1c-1fcb-45df-b752-6b32402cfe8c/download/a930000h201401kosyutoire.csv,,
+G空間,"""090000_栃木県_避難施設""","""避難所、避難場所等のデータです。
+栃木県のオープンデータです。""",https://www.geospatial.jp/ckan/dataset/c2e3cfcb-8aba-47ba-b827-085db643fee9/resource/3e3e4c8e-035c-4544-afa0-e6d49f60b73b/download/226952015shitei-kinkyuhinan01043.csv,,列名が未対応
+G空間,"""114081_埼玉県_寄居町_観光地情報""","""観光地情報のデータです。
+埼玉県寄居町のオープンデータです。""",https://www.geospatial.jp/ckan/dataset/f4ec0705-065c-4ab6-8d8b-4a8105984801/resource/0f07ae48-c2c6-4771-91e7-561e9a041155/download/kankouti.csv,,列名が未対応
+G空間,"""高砂市ベストスポット2018""","""2018年に高砂市役所が発表した、市民投票によるベストスポットの位置情報です。 推奨データセット及びNGSIに準じたオープンデータです。""",https://www.geospatial.jp/ckan/dataset/2dc3b2b5-a856-4845-8f59-c18b07dd08b2/resource/8e74fffc-e02f-4d01-bcf7-ee32fe00806b/download/takasagocitybestspot2018.csv,,
+G空間,"""37_香川県_雨量観測所""","""雨量データを公表している雨量観測所の所在地一覧です""",,,CSV形式データなし
+東京都,"""避難所""","""【品川区】　災害時等の避難所の位置情報""",http://www.city.shinagawa.tokyo.jp/ct/other000081500/hinansho.csv,,元データに経度の値に緯度の値が入っているのがある
+東京都,"""区内の橋梁一覧""","""区内の橋梁の名称や読み方、所在地、緯度、経度、管理者、橋下状況などを掲載しています。""",https://www.city.chuo.lg.jp/kusei/statisticaldata/opendata.files/kyoryo.csv,,キーワード記載なし
+東京都,"""東京都内のスポーツ施設一覧""","""【東京都オリンピック・パラリンピック準備局】""",http://www.opendata.metro.tokyo.jp/2018appcon/olympic/130001sports_facilities.csv,,
+東京都,"""【位置情報】公衆無線LANアクセスポイント一覧""","""公衆無線LANアクセスポイントの一覧データです。""",https://www.city.mitaka.lg.jp/c_service/085/attached/attach_85844_2.csv,,
+東京都,"""観光施設一覧""","""【西東京市】西東京市内の観光施設の一覧です。内閣官房情報通信技術（IT）総合戦略室が平成29年12月22日に公開した、推奨データセットに準拠して作成しています。""",http://www.city.nishitokyo.lg.jp/opendata/132292_tourism.csv,,
+東京都,"""文化財一覧""","""【東京都教育庁】東京都指定文化財の一覧です。現在は、一般公開されており、所有者・管理者の承諾が得られたもののみを公開しています。内閣官房情報通信技術（IT）総合戦略室が平成29年12月22日に公開した、推奨データセットに準拠して作成しています。""",http://www.opendata.metro.tokyo.jp/suisyoudataset/130001_cultural_property.csv,https://catalog.data.metro.tokyo.lg.jp/dataset/t000021d0000000017,経度のデータの値がおかしいたため、Bbox算出値がおかしくなる。
+東京都,"""東京都イベント一覧""","""【東京都総務局】東京都が主催者等であるイベント情報の一覧です。 内閣官房情報通信技術（IT）総合戦略室が平成29年12月22日に公開した、推奨データセットに準拠して作成しています。""",http://www.opendata.metro.tokyo.jp/suisyoudataset/130001_event.csv,,
+福岡,"""福岡市　避難場所・避難所（共通フォーマット）""","""福岡市の避難場所・避難所を，福岡市，北九州市，久留米市の３市で共通化したフォーマットにしたデータです。""",https://ckan.open-governmentdata.org/dataset/b299cddc-0a54-4aae-a32c-9e14ba0d0aae/resource/9197f659-de3a-46a3-b063-430f2e73d5eb/download/401307compatibleformatshelter.csv,,
+福岡,"""北九州市　避難場所・避難所（共通フォーマット）""","""北九州市の避難場所・避難所を、北九州市、福岡市、久留米市の３市で共通化したフォーマットにしたデータです。""",https://ckan.open-governmentdata.org/dataset/03ea03e1-6c34-4203-86a1-1c4a32fc4b91/resource/62eeb4c2-409d-4ee6-b18e-2eda2a6e7ef4/download/401005_hinanbasyo_20200701.csv,,
+静岡,"""農産物直売所""","""市内のファーマーズマーケット開催情報です。データ形式 lodでも公開しています。http://data.odp.jig.jp/rdf/jp/shizuoka/shimada/661.rdf""",https://ckan.pref.shizuoka.jp/dataset/35fea25e-3465-4545-b777-9aac251249d1/resource/c14cb22e-7615-48e8-b0e7-ed5fb3a5cbf3/download/farmersmarket.csv,https://ckan.pref.shizuoka.jp/dataset/91331960-0597-4531-aa8b-12e5dcf8cb7b,
+datagojp,"""パブリックタグ情報""","""国土地理院に登録されたWi-Fiやビーコンなど位置特定に利用可能な機器の設置位置などの属性に関する情報""",https://ucopendb.gsi.go.jp/ucode/ptisi_opendata.csv,https://www.data.go.jp/data/dataset/mlit_20160907_0024,
+datagojp,"""気象予報_天気予報・台風の資料""","""過去の天気図や台風資料、予報の精度検証結果などの天気予報・台風の分析・統計資料""",https://www.data.jma.go.jp/fcd/yoho/typhoon/position_table/table2019.csv,,
+その他,,,https://koukita.github.io/hokkaido_od_geodatabase/data/Hokkaido_OD_GeoDataBase2018.csv,,
+その他,国分寺市にある避難所の位置情報データ,国分寺市にある避難所の位置情報データ,,,自分で適当に作成したダミーデータ

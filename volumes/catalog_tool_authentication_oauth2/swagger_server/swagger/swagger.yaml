@@ -1,0 +1,91 @@
+openapi: 3.0.0
+info:
+  title: カタログ作成支援ツール　OAuth2認証拡張コンテナI/F
+  version: "1.0"
+servers:
+- url: /
+paths:
+  /login:
+    post:
+      tags:
+      - Login
+      summary: 対象のCKANユーザに対する認証を行う。
+      description: 対象のCKANユーザに対する認証を行い、認証結果を返却する。
+      operationId: login
+      requestBody:
+        description: |-
+          認証対象のCKANの情報
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/RequestBody'
+            example:
+              value:
+                ckan_url: ログイン対象のCKANのURL
+                username: CKANのログインに使用するCKANのユーザ名
+        required: true
+      responses:
+        "200":
+          description: 認証が成功した場合のメッセージ
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ResponseMessage'
+              examples:
+                response:
+                  value:
+                    status: 200
+                    detail: 認証に成功しました。
+        "400":
+          description: パラメータ不正の場合のエラーメッセージ
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ResponseMessage'
+              examples:
+                response:
+                  value:
+                    status: 400
+                    detail: リクエストパラメータにckan_urlがありません。
+        "500":
+          description: 内部処理で異常が発生した場合のエラーメッセージ
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ResponseMessage'
+              examples:
+                response:
+                  value:
+                    status: 500
+                    detail: コンフィグファイルの読み込みに失敗しました。
+      x-swagger-router-controller: swagger_server.controllers.login_controller
+      x-openapi-router-controller: swagger_server.controllers.login_controller
+components:
+  schemas:
+    ResponseMessage:
+      required:
+      - status
+      - detail
+      type: object
+      properties:
+        status:
+          type: number
+          description: HTTPステータスコード
+        detail:
+          type: string
+          description: 認証結果に対するメッセージ
+    RequestBody:
+      required:
+      - ckan_url
+      - username
+      type: object
+      properties:
+        ckan_url:
+          type: string
+          nullable: true
+          description: ログイン対象のCKANのURL
+        username:
+          type: string
+          nullable: true
+          description: CKANのログインに使用するCKANのユーザ名
+

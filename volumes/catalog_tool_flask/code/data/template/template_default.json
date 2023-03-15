@@ -1,0 +1,191 @@
+{
+    "catalog_display": {
+        "datasetinfo": {
+            "url": "optional",
+            "caddec_dataset_id_for_detail": "optional",
+            "publisher_name": "optional",
+            "publisher_uri": "optional",
+            "creator_name": "optional",
+            "creator_url": "optional",
+            "contact_name": "optional",
+            "contact_url": "optional"
+        },
+        "datajacket": {
+            "input_support_type": "optional",
+            "filename": "optional",
+            "description": "optional",
+            "downloadurl": "optional",
+            "explainurl": "optional",
+            "size": "optional",
+            "mime_type": "optional",
+            "format": "optional",
+            "compress_format": "optional",
+            "package_format": "optional",
+            "schema": "optional",
+            "schema_type": "optional",
+            "ngsi_entity_type": "optional",
+            "ngsi_tenant": "optional",
+            "ngsi_service_path": "optional",
+            "ngsi_data_model": "optional",
+            "get_resource_id_for_provenance": "optional",
+            "caddec_resource_id_for_provenance": "optional",
+            "data_service_title": "optional",
+            "data_service_endpoint_url": "optional",
+            "data_service_endpoint_description": "optional"
+        },
+        "datasetoptionalinfo": {
+            "theme": "optional",
+            "tags": "optional",
+            "language": "optional",
+            "vocabulary": "optional",
+            "term": "optional",
+            "frequency": "optional",
+            "spatial": "optional",
+            "temporal": "optional"
+        },
+        "userterms": {
+            "license_title": "optional",
+            "license_url": "optional",
+            "rights": "optional",
+            "access_rights": "optional",
+            "access_rights_url": "optional",
+            "haspolicy_url": "optional",
+            "prov_was_generated_by_url": "optional",
+            "conforms_to": "optional",
+            "trading_policy_contract_type": "optional",
+            "trading_policy_nda": "optional",
+            "trading_policy_use_application": "optional",
+            "scope_of_disclosure": "optional",
+            "terms_of_use_permissible_region": "optional",
+            "terms_of_use_notices": "optional",
+            "privacy_policy_contains_personal_data": "optional",
+            "data_effective_period": "optional",
+            "usage_license_period": "optional",
+            "fee": "optional",
+            "sales_info_url": "optional",
+            "pricing_price_range": "optional",
+            "pricing_notices_of_price": "optional",
+            "warranty_express_warranty": "optional",
+            "warranty_legal_compliance": "optional"
+        }
+    },
+    "catalog_value":{
+        "datasetinfo": {
+            "title": "",
+            "notes": "",
+            "url": "",
+            "regist_org": {
+                "label": "",
+                "value": ""
+            },
+            "caddec_provider_id": {
+                "label": "",
+                "value": ""
+            },
+            "publisher_name": "",
+            "publisher_uri": "",
+            "creator_name": "",
+            "creator_url": "",
+            "contact_name": "",
+            "contact_url": ""
+        },
+        "datajacket": [
+            {
+                "contractRequired": {
+                    "label": "要求しない",
+                    "value": "要求しない"
+                },
+                "connectRequired": {
+                    "label": "要求する",
+                    "value": "要求する"
+                },
+                "filename": "",
+                "dataname": "",
+                "description": "",
+                "dataurl": "",
+                "downloadUrl": "",
+                "explainurl": "",
+                "size": "",
+                "mimetype": "",
+                "format": "",
+                "compressFormat": "",
+                "packageFormat": "",
+                "schema": "",
+                "schemaType": "",
+                "ngsiEntityType": "",
+                "ngsiTenant": "",
+                "ngsiServicePath": "",
+                "ngsiDataModel": [],
+                "getResourceIDForProvenance": {
+                  "label": "来歴登録を行わない",
+                  "value": "no"
+                },
+                "resourceIDForProvenance": "",
+                "dataServiceTitle": "",
+                "data_serviceEndpointUrl": "",
+                "dataServiceEndpointDescription": "",
+                "resourceType": {
+                    "label": "",
+                    "value": ""
+                },
+                "license_title": "",
+                "licenseurl": "",
+                "issued": "",
+                "label": ""
+            }
+        ],
+        "datasetoptionalinfo": {
+            "theme": [],
+            "tags": [],
+            "language": [{ "label": "日本語", "value": "ja" }],
+            "vocabulary": "",
+            "term": "",
+            "frequency": "",
+            "spatial_url": "",
+            "spatial_text": "",
+            "spatial": "",
+            "temporal_start": "",
+            "temporal_end": ""
+        },
+        "userterms": {
+            "selected_tab": "pickroules",
+            "license_title": "",
+            "license_url": "",
+            "rights": "",
+            "access_rights": "",
+            "access_rights_url": "",
+            "haspolicy_url": "",
+            "prov_was_generated_by_url": "",
+            "conforms_to": "",
+            "trading_policy_contract_type": "",
+            "trading_policy_nda": "",
+            "trading_policy_use_application": [],
+            "trading_policy_use_application_free": "",
+            "scope_of_disclosure": "",
+            "scope_of_disclosure_free": "",
+            "terms_of_use_permissible_region": [{ "label": "制限なし", "value": "制限なし" }],
+            "terms_of_use_permissible_region_free": "",
+            "terms_of_use_notices": "",
+            "privacy_policy_contains_personal_data": "",
+            "privacy_policy_contains_personal_data_free": "",
+            "data_effective_period_term": "",
+            "data_effective_period_start": "",
+            "data_effective_period_end": "",
+            "data_effective_period_free": "",
+            "usage_license_period_term": "",
+            "usage_license_period_deadline": "",
+            "usage_license_period_period": "",
+            "usage_license_period_unit": "",
+            "usage_license_period_free": "",
+            "fee": "",
+            "sales_info_url": "",
+            "pricing_price_range": "",
+            "pricing_notices_of_price": "",
+            "warranty_express_warranty": "",
+            "warranty_express_warranty_free": "",
+            "warranty_legal_compliance": [],
+            "warranty_legal_compliance_free": ""
+        }
+    }
+}
+
