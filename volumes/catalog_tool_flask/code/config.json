@@ -38,7 +38,7 @@
       }
   },
   "authentication": {
-      "auth_server_url": "http://10.240.59.11:12002",
+      "auth_server_url": "https://auth01.saas.data-linkage.jp",
       "keycloak_endpoint": "/keycloak/realms/authentication",
       "client_id": "catalog_tool_app",
       "client_secret": "J7BrmdfM9xoxEoxNfFoDnNlTbSetgv41"
@@ -54,22 +54,17 @@
   },
   "http_auth": [
     {
-      "url": "http://10.240.59.11:30088",
-      "id": "test",
-      "pass": "test123",
+      "url": "http://http_example.com:XXXX",
+      "id": "example_id",
+      "pass": "example_pass",
       "proxy": false
     }
   ],
   "ftp_auth": [
     {
-      "url": "ftp://10.240.59.11",
-      "id": "anonymous",
-      "pass": "anonymous"
-    },
-    {
-      "url": "ftp://10.240.59.11:40121",
-      "id": "test_C",
-      "pass": "mypass_C"
+      "url": "http://ftp_example.com:XXXX",
+      "id": "example_id",
+      "pass": "example_pass"
     }
   ]
 }
