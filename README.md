@@ -1,7 +1,14 @@
 # 「データカタログ作成ツール」の設定ファイル変更・ツール起動手順
+
 <br>
 
-# 1. アプリケーションサーバの設定ファイルの変更
+# 1. カタログ作成ツール取得
+```
+$ git clone https://github.com/CADDE-sip/catalog_tool
+```
+
+
+# 2. アプリケーションサーバの設定ファイルの変更
 対象ファイル： ./volumes/catalog_tool_flask/code/config.json
 - config.json
   <br>./volumes/catalog_tool_flask/code/<br>
@@ -106,7 +113,7 @@
 
 <br>
 
-# 2．NGSI連携コンテナサーバの設定ファイルの変更
+# 3．NGSI連携コンテナサーバの設定ファイルの変更
   NGSIサーバへアクセスするための設定をコンフィグファイルに記載します。
 - config.json
   <br>./volumes/catalog_tool_ngsi/swagger_server/configs<br>
@@ -151,7 +158,7 @@
 
 <br>
 
-# 3. 認証拡張コンテナの設定ファイルの変更
+# 4. 認証拡張コンテナの設定ファイルの変更
   認証拡張機能を使用してCKANユーザを認証するための設定をコンフィグファイルに記載します。
 
 (3-1)OAuth2認証拡張コンテナのコンフィグ設定
@@ -170,28 +177,42 @@
 
 <br>
 
-# 4．機械学習コンテナイメージのビルド
-
-```
-$ cd ./images/ml
-$ sudo sh build.sh
-```
-<br>
-
 # 5．サービス起動
+・機械学習コンテナを起動しない場合
 
 ```
 $ cd ../../
-$ sudo ./start.sh
+$ sudo sh ./start.sh
 ```
 <br>
+
+・全コンテナを起動する場合
+```
+$ cd ../../
+$ sudo sh ./start.sh all
+```
+<br>
+
 
 # 6．サービス起動確認
 
 ```
 $ sudo docker compose -f docker-compose.yml ps
 ```
+
 コマンド結果
+<br>
+・機械学習コンテナ以外を起動した場合
+```
+NAME                                 COMMAND                  SERVICE                              STATUS              PORTS
+catalog-tool-authentication-oauth2   "python3 -m swagger_…"   catalog_tool_authentication_oauth2   running             8080/tcp
+catalog-tool-flask                   "gunicorn app:app -b…"   catalog_tool_flask                   running             0.0.0.0:18000->18000/tcp, :::18000->18000/tcp
+catalog-tool-ngsi                    "python3 -m swagger_…"   catalog_tool_ngsi                    running             8080/tcp
+catalog-tool-postgres                "docker-entrypoint.s…"   catalog_tool_postgres                running             5432/tcp
+catalog-tool-web                     "/docker-entrypoint.…"   nginx                                running             0.0.0.0:8000->8000/tcp, :::8000->8000/tcp
+```
+<br>
+・全コンテナを起動した場合
 
 ```
 NAME                                 COMMAND                  SERVICE                              STATUS              PORTS
@@ -215,5 +236,17 @@ catalog-tool-web                     "/docker-entrypoint.…"   nginx           
 # 8.サービス停止
 
 ```
-$ sudo ./stop.sh
+$ sudo sh ./stop.sh
 ```
+<br>
+
+# 参考
+
+## 機械学習コンテナの設定について
+機械学習コンテナのイメージは以下のコマンドでビルドする。
+<br>（カタログ作成ツール起動時に自動で機械学習コンテナのイメージはビルドされる）
+```
+$ cd ./images/ml
+$ sudo sh build.sh
+```
+

@@ -1,22 +1,22 @@
 {
   "ckan_info": {
     "release": {
-      "ckan_url": "http://ec2-13-115-62-178.ap-northeast-1.compute.amazonaws.com:5000/",
-      "sysadmin_key": "04c76dfa-0adb-4fd8-941a-5c57926a3009",
+      "ckan_url": "http://release_ckan.com:XXXX/",
+      "sysadmin_key": "12345-67890",
       "authentication": false,
       "authentication_method": "OAuth2"
     },
     "detail": {
-      "ckan_url": "http://ec2-13-115-62-178.ap-northeast-1.compute.amazonaws.com:5500/",
-      "sysadmin_key": "04c76dfa-0adb-4fd8-941a-5c57926a3009",
+      "ckan_url": "http://detail_ckan.com:XXXX/",
+      "sysadmin_key": "12345-67890",
       "authentication": false,
       "authentication_method": "OAuth2"
     }
   },
   "sysadmin": {
-      "cadde_user_id": ["ckan_admin", "cadde_admin", "cadde.aaa.aa"],
-      "ckan_username": "ckan_admin",
-      "ckan_user_password": "test1234"
+      "cadde_user_id": ["cadde_example_user1", "cadde_example_user2"],
+      "ckan_username": "ckan_example_user",
+      "ckan_user_password": "ckan_example_user_pass"
   },
   "geonames": {
       "use_geonames": false,
@@ -28,20 +28,19 @@
       "spatial": true,
       "temporal": true
   },
-  "history_url": "http://sougou2.fj-trial.com/sip01-org01-cdl/v2/",
+  "history_url": "http://provenance_example.com/hogehoge/v2/",
   "server": {
     "ngsi": "catalog-tool-ngsi:18080",
     "grpc": "catalog-tool-ml:50251",
     "ckan_authentication": {
-      "OAuth": "catalog-tool-authentication-oauth",
       "OAuth2": "catalog-tool-authentication-oauth2"
       }
   },
   "authentication": {
-      "auth_server_url": "https://auth01.saas.data-linkage.jp",
+      "auth_server_url": "http://authentication_example.com:10000",
       "keycloak_endpoint": "/keycloak/realms/authentication",
-      "client_id": "catalog_tool_app",
-      "client_secret": "J7BrmdfM9xoxEoxNfFoDnNlTbSetgv41"
+      "client_id": "client_exaple_id",
+      "client_secret": "client_exaple_secret"
   },
   "postgres": {
       "dialect": "postgresql",
@@ -68,3 +67,4 @@
     }
   ]
 }
+
