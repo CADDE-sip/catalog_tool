@@ -177,7 +177,16 @@ $ git clone https://github.com/CADDE-sip/catalog_tool
 
 <br>
 
-# 5．サービス起動
+# 5．起動前準備
+・機械学習コンテナを起動しない場合は不要
+
+```
+$ cd ../../
+$ sudo sh ./setup.sh
+```
+<br>
+
+# 6．サービス起動
 ・機械学習コンテナを起動しない場合
 
 ```
@@ -194,7 +203,7 @@ $ sudo sh ./start.sh all
 <br>
 
 
-# 6．サービス起動確認
+# 7．サービス起動確認
 
 ```
 $ sudo docker compose -f docker-compose.yml ps
@@ -225,7 +234,7 @@ catalog-tool-web                     "/docker-entrypoint.…"   nginx           
 ```
 <br>
 
-# 7．ツール使用手順
+# 8．ツール使用手順
 
 1. Webブラウザから本ツールのサイトにアクセスする(例: http://[本ツールのIPアドレス]:8000)
 2. トップ画面より、画面下部の「ログインページへ」ボタンを押下する
@@ -233,7 +242,7 @@ catalog-tool-web                     "/docker-entrypoint.…"   nginx           
 4. カタログ本体画面が開くことを確認する
 <br>
 
-# 8.サービス停止
+# 9.サービス停止
 
 ```
 $ sudo sh ./stop.sh
