@@ -1,5 +1,5 @@
 #!/bin/bash
-docker build -t flask:1.0.2 \
+docker build -t flask:4.0.0 \
   --no-cache=true \
   --build-arg HTTP_PROXY=$1 \
   --build-arg HTTPS_PROXY=$1 \
