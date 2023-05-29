@@ -34,7 +34,8 @@ def get_word2vec(word):
     :param word: str, 単語の文字列
     :return: numpy array, 単語のベクトル表現
     """
-    return model.wv.word_vec(word, use_norm=False)
+    #return model.wv.word_vec(word, use_norm=False)
+    return model.wv.word_vec(word)
 
 
 def wordslist2vec(wordslist):
