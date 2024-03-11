@@ -1,0 +1,324 @@
+openapi: 3.0.0
+info:
+  title: カタログ作成支援ツール　NGSI連携コンテナI/F
+  version: "1.0"
+servers:
+- url: /
+paths:
+  /api/v1/ngsi/entities/datamodel:
+    get:
+      tags:
+      - GetDatamodel
+      summary: DataModel取得
+      description: クエリに設定したデータ種別を基にデータモデルを取得する。
+      operationId: get_datamodel
+      parameters:
+      - name: type
+        in: query
+        description: データモデルを取得する対象のNGSIデータのエンティティタイプ
+        required: true
+        style: form
+        explode: true
+        schema:
+          type: string
+      - name: X_CATALOGTOOL_NGSI_URL
+        in: header
+        description: データモデルを取得する対象のNGSIデータが蓄積されたNGSIサーバのURL
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      - name: Fiware_Service
+        in: header
+        description: データモデルを取得する対象のNGSIデータが蓄積されたFiware-Service
+        required: false
+        style: simple
+        explode: false
+        schema:
+          type: string
+      - name: Fiware_ServicePath
+        in: header
+        description: データモデルを取得する対象のNGSIデータが蓄積されたFiware-ServicePath
+        required: false
+        style: simple
+        explode: false
+        schema:
+          type: string
+      responses:
+        "200":
+          description: |
+            一致するイベントのリストを返します.リスト内の順序は不定な順序です.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Entity'
+        "400":
+          description: パラメータ不正の場合のエラーメッセージ
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              examples:
+                response:
+                  value:
+                    detail: Missing header parameter (パラメータ名)
+                    status: 400
+        "408":
+          description: タイムアウトが発生した場合のエラーメッセージ
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              examples:
+                response:
+                  value:
+                    detail: エラー発生しました。エラー:(エラー内容)
+                    status: 408
+        "500":
+          description: サーバーの内部処理で異常が発生した場合のエラーメッセージ
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              examples:
+                response:
+                  value:
+                    detail: エラー発生しました。エラー:(エラー内容)
+                    status: 500
+      x-swagger-router-controller: swagger_server.controllers.get_datamodel_controller
+      x-openapi-router-controller: swagger_server.controllers.get_datamodel_controller
+  /api/v1/ngsi/entities/data:
+    get:
+      tags:
+      - GetData
+      summary: NGSIデータ取り込み
+      description: データ取り込み対象のNGSIデータを取得する。
+      operationId: get_data
+      parameters:
+      - name: type
+        in: query
+        description: データ取り込み対象のNGSIデータのエンティティタイプ
+        required: true
+        style: form
+        explode: true
+        schema:
+          type: string
+      - name: X_CATALOGTOOL_NGSI_URL
+        in: header
+        description: データ取り込み対象のNGSIデータが蓄積されたNGSIサーバのURL
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      - name: Fiware_Service
+        in: header
+        description: データ取り込み対象のNGSIデータが蓄積されたFiware-Service
+        required: false
+        style: simple
+        explode: false
+        schema:
+          type: string
+      - name: Fiware_ServicePath
+        in: header
+        description: データ取り込み対象のNGSIデータが蓄積されたFiware-ServicePath
+        required: false
+        style: simple
+        explode: false
+        schema:
+          type: string
+      responses:
+        "200":
+          description: |
+            取得したコンテキスト情報をNGSI形式で返す（※コンテキスト情報の一覧を取得した場合は、Entityのarray型で返却する）
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Entity'
+        "400":
+          description: パラメータ不正の場合のエラーメッセージ
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              examples:
+                response:
+                  value:
+                    detail: Missing header parameter (パラメータ名)
+                    status: 400
+        "408":
+          description: タイムアウトが発生した場合のエラーメッセージ
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              examples:
+                response:
+                  value:
+                    detail: エラー発生しました。エラー:(エラー内容)
+                    status: 408
+        "500":
+          description: サーバーの内部処理で異常が発生した場合のエラーメッセージ
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              examples:
+                response:
+                  value:
+                    detail: エラー発生しました。エラー:(エラー内容)
+                    status: 500
+      x-swagger-router-controller: swagger_server.controllers.get_data_controller
+      x-openapi-router-controller: swagger_server.controllers.get_data_controller
+  /api/v1/ngsi/entities/originaldata:
+    get:
+      tags:
+      - GetOriginalData
+      summary: 原本に使用するNGSIデータの取得
+      description: 原本に使用するNGSIデータを取得する。
+      operationId: get_originaldata
+      parameters:
+      - name: type
+        in: query
+        description: 原本を作成する対象のNGSIデータのエンティティタイプ
+        required: true
+        style: form
+        explode: true
+        schema:
+          type: string
+      - name: X_CATALOGTOOL_NGSI_URL
+        in: header
+        description: 原本を作成する対象のNGSIデータが蓄積されたNGSIサーバのURL
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      - name: Fiware_Service
+        in: header
+        description: 原本を作成する対象のNGSIデータが蓄積されたFiware-Service
+        required: false
+        style: simple
+        explode: false
+        schema:
+          type: string
+      - name: Fiware_ServicePath
+        in: header
+        description: 原本を作成する対象のNGSIデータが蓄積されたFiware-ServicePath
+        required: false
+        style: simple
+        explode: false
+        schema:
+          type: string
+      responses:
+        "200":
+          description: |
+            対象のNGSIデータを成形したデータを返す
+          headers:
+            X-CATALOGTOOL-NGSI-ORIGINAL-DATA-URL:
+              description: 原本に使用するNGSIデータを取得するためのURLとFiware-Service、Fiware-ServicePathを連携した値。
+              style: simple
+              explode: false
+              schema:
+                type: string
+          content:
+            application/octet-stream:
+              schema:
+                type: string
+                format: binary
+                x-content-type: application/octet-stream
+        "400":
+          description: パラメータ不正の場合のエラーメッセージ
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              examples:
+                response:
+                  value:
+                    detail: Missing header parameter (パラメータ名)
+                    status: 400
+        "408":
+          description: タイムアウトが発生した場合のエラーメッセージ
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              examples:
+                response:
+                  value:
+                    detail: エラー発生しました。エラー:(エラー内容)
+                    status: 408
+        "500":
+          description: サーバーの内部処理で異常が発生した場合のエラーメッセージ
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              examples:
+                response:
+                  value:
+                    detail: エラー発生しました。エラー:(エラー内容)
+                    status: 500
+      x-swagger-router-controller: swagger_server.controllers.get_originaldata_controller
+      x-openapi-router-controller: swagger_server.controllers.get_originaldata_controller
+components:
+  schemas:
+    ErrorResponse:
+      required:
+      - detail
+      - status
+      type: object
+      properties:
+        detail:
+          type: string
+          description: エラーメッセージ
+        status:
+          type: number
+          description: HTTPステータスコード
+    Metadata:
+      type: object
+      properties:
+        type:
+          type: string
+        value:
+          type: object
+          properties: {}
+          example: {}
+      example:
+        type: type
+        value: {}
+    AttributeValue:
+      type: object
+    Attribute:
+      required:
+      - type
+      - value
+      type: object
+      properties:
+        value:
+          $ref: '#/components/schemas/AttributeValue'
+        type:
+          type: string
+        metadata:
+          $ref: '#/components/schemas/Metadata'
+      example:
+        metadata:
+          type: type
+          value: {}
+        type: type
+        value: {}
+    Entity:
+      type: object
+      properties:
+        AttributeName:
+          $ref: '#/components/schemas/Attribute'
+      example:
+        AttributeName:
+          metadata:
+            type: type
+            value: {}
+          type: type
+          value: {}
+

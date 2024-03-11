@@ -1,0 +1,27 @@
+{
+	"entities_limit" : 20,
+	"types_limit" : 100,
+    "ngsi_auth" : [
+        {
+            "cert_type": "static",
+            "endpoint_url": "",
+            "auth": ""
+        },
+        {
+            "cert_type": "client_credential",
+            "endpoint_url": "",
+            "certification_url": "",
+            "client_id": "",
+            "client_secret": ""
+        },
+        {
+            "cert_type": "password",
+            "endpoint_url": "",
+            "certification_url": "",
+            "client_id": "",
+            "client_secret": "",
+            "user_id": "",
+            "user_pw": ""
+        }
+    ]
+}

@@ -1,0 +1,70 @@
+{
+  "ckan_info": {
+    "release": {
+      "ckan_url": "http://release_ckan.com:XXXX/",
+      "sysadmin_key": "12345-67890",
+      "authentication": false,
+      "authentication_method": "OAuth2"
+    },
+    "detail": {
+      "ckan_url": "http://detail_ckan.com:XXXX/",
+      "sysadmin_key": "12345-67890",
+      "authentication": false,
+      "authentication_method": "OAuth2"
+    }
+  },
+  "sysadmin": {
+      "cadde_user_id": ["cadde_example_user1", "cadde_example_user2"],
+      "ckan_username": "ckan_example_user",
+      "ckan_user_password": "ckan_example_user_pass"
+  },
+  "geonames": {
+      "use_geonames": false,
+      "username": ""
+  },
+  "machine_learn": {
+      "theme": true,
+      "keyword": true,
+      "spatial": true,
+      "temporal": true
+  },
+  "history_url": "http://provenance_example.com/hogehoge/v2/",
+  "server": {
+    "ngsi": "catalog-tool-ngsi:18080",
+    "grpc": "catalog-tool-ml:50251",
+    "ckan_authentication": {
+      "OAuth2": "catalog-tool-authentication-oauth2"
+      }
+  },
+  "authentication": {
+      "auth_server_url": "http://authentication_example.com:10000",
+      "keycloak_endpoint": "/keycloak/realms/authentication",
+      "client_id": "client_exaple_id",
+      "client_secret": "client_exaple_secret"
+  },
+  "postgres": {
+      "dialect": "postgresql",
+      "driver": "",
+      "username": "catalogtool",
+      "password": "catalogtool",
+      "host": "catalog-tool-postgres",
+      "port": "5432",
+      "database": "catalogtool"
+  },
+  "http_auth": [
+    {
+      "url": "http://http_example.com:XXXX",
+      "id": "example_id",
+      "pass": "example_pass",
+      "proxy": false
+    }
+  ],
+  "ftp_auth": [
+    {
+      "url": "http://ftp_example.com:XXXX",
+      "id": "example_id",
+      "pass": "example_pass"
+    }
+  ]
+}
+

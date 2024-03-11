@@ -1,0 +1,190 @@
+[
+  {
+    "label": "農業・林業",
+    "value": "agriculture"
+  },
+  {
+    "label": "漁業",
+    "value": "fishery"
+  },
+  {
+    "label": "鉱業・採石業・砂利採取業",
+    "value": "mining"
+  },
+  {
+    "label": "建設業",
+    "value": "construction"
+  },
+  {
+    "label": "製造業",
+    "value": "manufacturing"
+  },
+  {
+    "label": "電気・ガス・熱供給・水道業",
+    "value": "lifeline"
+  },
+  {
+    "label": "情報通信業",
+    "value": "information"
+  },
+  {
+    "label": "運輸業・郵便業",
+    "value": "transport"
+  },
+  {
+    "label": "運輸業・郵便業 > 鉄道",
+    "value": "train"
+  },
+  {
+    "label": "運輸業・郵便業 > バス",
+    "value": "bus"
+  },
+  {
+    "label": "運輸業・郵便業 > タクシー",
+    "value": "taxi"
+  },
+  {
+    "label": "卸売り業・小売業",
+    "value": "wholesale"
+  },
+  {
+    "label": "金融業・保険業",
+    "value": "finance"
+  },
+  {
+    "label": "不動産業・物品賃貸業",
+    "value": "realestate"
+  },
+  {
+    "label": "学術研究・専門・技術サービス業",
+    "value": "academic"
+  },
+  {
+    "label": "宿泊業・飲食サービス業",
+    "value": "accommodation"
+  },
+  {
+    "label": "生活関連サービス業・娯楽業",
+    "value": "entertainment"
+  },
+  {
+    "label": "教育・学習支援業",
+    "value": "education"
+  },
+  {
+    "label": "医療・福祉",
+    "value": "medical_care"
+  },
+  {
+    "label": "医療・福祉 > 医療機関",
+    "value": "hospital"
+  },
+  {
+    "label": "複合サービス事業",
+    "value": "combinedservice"
+  },
+  {
+    "label": "サービス業",
+    "value": "service"
+  },
+  {
+    "label": "公務",
+    "value": "official"
+  },
+  {
+    "label": "分類不能の産業",
+    "value": "unclassifiable"
+  },
+  {
+    "label": "国土",
+    "value": "country"
+  },
+  {
+    "label": "国土 > 道路",
+    "value": "road"
+  },
+  {
+    "label": "気象",
+    "value": "weather"
+  },
+  {
+    "label": "人口・世帯",
+    "value": "population"
+  },
+  {
+    "label": "労働",
+    "value": "labor"
+  },
+  {
+    "label": "企業・家計・経済",
+    "value": "company"
+  },
+  {
+    "label": "観光 > イベント",
+    "value": "event"
+  },
+  {
+    "label": "観光 > 観光スポット",
+    "value": "tourist_spot"
+  },
+  {
+    "label": "観光 > 宿泊",
+    "value": "hotel"
+  },
+  {
+    "label": "観光 > 娯楽",
+    "value": "sightseeing_entertainment"
+  },
+  {
+    "label": "観光 > グルメ",
+    "value": "food"
+  },
+  {
+    "label": "観光 > ショッピング",
+    "value": "shopping"
+  },
+  {
+    "label": "観光 > その他",
+    "value": "sightseeing"
+  },
+  {
+    "label": "司法",
+    "value": "justice"
+  },
+  {
+    "label": "安全",
+    "value": "safety"
+  },
+  {
+    "label": "環境",
+    "value": "environment"
+  },
+  {
+    "label": "災害 > 地震",
+    "value": "earthquake"
+  },
+  {
+    "label": "災害 > 風水害",
+    "value": "wind_and_flood_damage"
+  },
+  {
+    "label": "災害 > 火山",
+    "value": "volcano"
+  },
+  {
+    "label": "災害 > 土砂災害",
+    "value": "sediment_disaster"
+  },
+  {
+    "label": "災害 > 避難施設",
+    "value": "evacuation_facility"
+  },
+  {
+    "label": "災害 > その他",
+    "value": "disaster"
+  },
+  {
+    "label": "国際",
+    "value": "international"
+  }
+]

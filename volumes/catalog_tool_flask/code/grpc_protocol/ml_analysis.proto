@@ -1,0 +1,67 @@
+// 分析を行うためのプロトコル
+
+syntax = "proto3";
+package mlAnalysis;
+
+
+// ファイルメタデータ
+message MetaData {
+  string name = 1;    // ファイル名
+  string type = 2;    // ファイルタイプ
+  string path = 3;    // ファイルの保存ディレクトリ
+}
+
+// テーマ・キーワードの分析リクエスト
+message AnalysisThemeKeyword {
+  string title = 1;           // タイトル
+  string description = 2;     // 説明
+  string analyse_type = 3;    // 分析タイプ
+}
+
+// データセットの対象期間の分析リクエスト
+message AnalysisTemporal {
+  string text = 1;                    // テキスト
+  string data = 2;                    // データ
+  string column_name = 3;             // カラム名
+  string input_datetime_format = 4;   // フォーマット
+}
+
+// データセットの対象地域の分析リクエスト
+message AnalysisSpatial {
+  string data = 1;        // データ
+  string title = 2;       // タイトル
+  string notes = 3;       // 説明
+  string method = 4;      // マージ・ソートの指定
+}
+
+// テーマ・キーワード分析のリプライ
+message ReplyThemeKeyword {
+  string best_analyse = 1;    // 分析結果の最良
+  string top_analyse = 2;     // 分析結果の上位リスト
+  string probability = 3;     // 分析結果の確率
+}
+
+// データセットの対象期間分析のリプライ
+message ReplyTemporal {
+  string start_datetime = 1;  // 分析結果の開始年月日
+  string end_datetime = 2;    // 分析結果の終了年月日
+}
+
+// データセットの対象地域分析のリプライ
+message ReplySpatial {
+  string spatial_list = 1;    // 分析結果のデータフレームのリスト
+}
+
+// サービスの定義
+service AnalyseService {
+  // テーマ・キーワードのサービス
+  rpc ThemeKeywordAnalyseServer (stream AnalysisThemeKeyword) returns (stream ReplyThemeKeyword) {};
+
+  // データセットの対象期間推測のサービス
+  rpc TemporalAnalyseServer (stream AnalysisTemporal) returns (stream ReplyTemporal) {};
+  
+  // データセットの対象地域推測のサービス
+  rpc SpatialAnalyseServer (stream AnalysisSpatial) returns (stream ReplySpatial) {};
+
+}
+
