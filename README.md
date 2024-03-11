@@ -158,7 +158,7 @@ $ git clone https://github.com/CADDE-sip/catalog_tool
 
 <br>
 
-# 4. 認証拡張コンテナの設定ファイルの変更
+# 5. 認証拡張コンテナの設定ファイルの変更
   認証拡張機能を使用してCKANユーザを認証するための設定をコンフィグファイルに記載します。
 
 (3-1)OAuth2認証拡張コンテナのコンフィグ設定
@@ -178,19 +178,18 @@ $ git clone https://github.com/CADDE-sip/catalog_tool
 <br>
 
 
-# 4. docker networkの作成
+# 6. docker networkの作成
 
 ```
-$ cd ../../
 $ sodu docker network create provider
 ```
 
-# 5．サービス起動
+# 7．サービス起動
 ```
 $ sudo sh ./start.sh
 ```
 
-# 6．サービス起動確認
+# 8．サービス起動確認
 
 ```
 $ sudo docker compose -f docker-compose.yml ps
@@ -207,7 +206,7 @@ catalog-tool-postgres                "docker-entrypoint.s…"   catalog_tool_pos
 catalog-tool-web                     "/docker-entrypoint.…"   nginx                                running             0.0.0.0:8000->8000/tcp, :::8000->8000/tcp
 ```
 
-# 7．ツール使用手順
+# 9．ツール使用手順
 
 1. Webブラウザから本ツールのサイトにアクセスする(例: http://[本ツールのIPアドレス]:8000)
 2. トップ画面より、画面下部の「ログインページへ」ボタンを押下する
@@ -215,7 +214,7 @@ catalog-tool-web                     "/docker-entrypoint.…"   nginx           
 4. カタログ本体画面が開くことを確認する
 <br>
 
-# 8.サービス停止
+# 10.サービス停止
 
 ```
 $ sudo sh ./stop.sh
