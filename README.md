@@ -221,5 +221,4 @@ $ sudo sh ./stop.sh
 ```
 <br>
 
-## 問い合わせ先
-問い合わせ窓口：ml_bunyakan_dl@ml.itg.hitachi.co.jp <br><br>
+
